@@ -27,7 +27,7 @@ int main()
 	fr(i, 0, n) {
 		cin >> arr[i];
 	}
-	unordered_map<int, int> mp;
+	map<int, int> mp;
 	vi brr;
 	fr(i, 0, n) {
 		if(mp.find(arr[i]) == mp.end()) {
