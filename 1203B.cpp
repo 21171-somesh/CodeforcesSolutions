@@ -2,9 +2,6 @@
 #include <algorithm>
 #include <map>
 
-
-
-
 using namespace std;
 
 int arr[402];
@@ -33,7 +30,7 @@ int main() {
 	    {
 	    	if (p.second %2 ==1)
 	    	{
-	    		ans = false;
+				ans = false;
 	    		break;
 	    	}
 	    }
@@ -49,11 +46,9 @@ int main() {
 	    		
 	    		if (mult == arr[i]*arr[4*n-i-1]) continue;
 	    		ans = false;
-	    		//printf("multiplicando %d y %d romio\n", );
 	    	}
 	    }
 	    if (ans) printf("YES\n");
 	    else printf("NO\n");
-
 	}
 }
