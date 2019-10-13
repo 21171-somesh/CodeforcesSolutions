@@ -22,10 +22,10 @@ int main() {
 				if (order[i]==order[0]-1) continue;
 			}
 			if ( order[i] == n && order[i+1] == 1 ) continue;
-		    if ( order[i] == order[i + 1] -1 ) continue;
-		    //printf("en el indice %d salio \n", i);
-		    dance = false;
-		    break;
+			if ( order[i] == order[i + 1] -1 ) continue;
+			//printf("en el indice %d salio \n", i);
+		   	dance = false;
+		    	break;
 		}
 		if (dance)
 		{
@@ -40,8 +40,8 @@ int main() {
 				if (order[i]==1 && order[0]==n) continue;
 			}
 			if ( order[i] == 1 && order[i+1] == n ) continue;
-		    if ( order[i] == order[i + 1] +1 ) continue;
-		    //printf("en el indice %d salio \n", i);
+		    	if ( order[i] == order[i + 1] +1 ) continue;
+		    	//printf("en el indice %d salio \n", i);
 			dance = false;
 			break;
 		}
