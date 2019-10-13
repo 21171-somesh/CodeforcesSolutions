@@ -2,53 +2,42 @@
 
 using namespace std;
 
-int main()
-{
-    long long n,l=0,r=0;
+int main() {
+    long long n, l = 0, r = 0;
     string s;
-    cin>>n>>s;
-    if(n%2!=0)
-    {
-        cout<<"No";
+    cin >> n >> s;
+    if(n%2 != 0) {
+        cout << "No";
         return 0;
     }
     stack<char>k;
-    for(int i=0;i<n;i++)
-    {
-        if((!k.empty()) && k.top()=='(' && s[i]==')')
-        {
+    for(int i = 0; i < n; i++) {
+        if((!k.empty()) && k.top() == '(' && s[i] == ')') {
             k.pop();
         }
-        else
-        {
+        else {
             k.push(s[i]);
         }
-
-        if(s[i]==')')
-        {
+        if(s[i]==')') {
             l++;
         }
-        else
-        {
+        else {
             r++;
         }
     }
-    if(l!=r)
-    {
-        cout<<"No";
+    if(l != r) {
+        cout << "No";
         return 0;
     }
     long cnt=0;
-    while(!k.empty())
-    {
+    while(!k.empty()) {
         k.pop();
         cnt++;
-        if(cnt>2)
-        {
-            cout<<"No";
+        if(cnt>2) {
+            cout << "No";
             return 0;
         }
     }
-    cout<<"Yes";
+    cout << "Yes";
     return 0;
 }
