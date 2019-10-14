@@ -13,7 +13,6 @@ using namespace std;
 int main() {
   IOS
   #ifdef AV
-
   freopen("int.txt", "r", stdin);
   #endif
   ll t;
