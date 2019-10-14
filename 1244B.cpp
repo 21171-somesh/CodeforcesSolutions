@@ -1,5 +1,3 @@
-//verma_ankit484
-
 #include<bits/stdc++.h>
 
 typedef long long ll;
@@ -12,9 +10,6 @@ using namespace std;
 
 int main() {
   IOS
-  #ifdef AV
-  freopen("int.txt", "r", stdin);
-  #endif
   ll t;
   cin >> t;
   while (t--) {
