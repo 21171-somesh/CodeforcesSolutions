@@ -12,4 +12,4 @@ Solutions of various problems on Codeforces platform will be posted here.
 * Don't give your code a personalised touch and avoid using much macros.
 * Name your files in the format: <contest_number> + <problem_code>
 
-**NOTE** : Bad PR's will not be accepected.
+**NOTE** : Bad PR's will not be accepted.
