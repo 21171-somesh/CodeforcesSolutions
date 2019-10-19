@@ -2,30 +2,35 @@
  
 using namespace std;
  
-int main(){
+int main()
+{
+    ios_base::sync_with_stdio(false);
     int n;
     cin>>n;
-    int one = 0, two = 0;
-    for(int i=0; i < n; ++i){
-        int d;
-        cin>>d;
-        if(d == 1)  ++one;
-        else ++two;
+    int arr[3];
+    arr[0] = arr[1] = arr[2] = 0;
+    for(int i = 0; i < n; i++){
+        int x;
+        cin>>x;
+        arr[x]++;
     }
-    if(two){
-        cout<<"2 ";
-        --two;
-    }
-    if(one){
-        cout<<"1 ";
-        --one;
-    }
-    while(two){
-        --two;
-        cout<<"2 ";
-    }
-    while(one){
-        --one;
-        cout<<"1 ";
+    int twos = arr[2] , ones = arr[1];
+    if(arr[1] == 0){
+        while(twos--)
+            cout<<2<<" ";
+        return 0;
+    }else if(arr[2] == 0){
+        while(ones--)
+            cout<<1<<" ";
+        return 0;
+    }else{
+        cout<<"2 1 ";
+        twos--, ones--;
+        while(twos--){
+            cout<<2<<" ";
+        }
+        while(ones--){
+            cout<<1<<" ";
+        }
     }
 }
