@@ -91,26 +91,24 @@ void findElements(int arr[], int n)
         if(smaller_right[i]){
             ans++;
         }
-    cout<<ans<<endl;
+    cout << ans << endl;
 } 
   
 // Driver code 
 int main() 
 { 
-       int t;
-    cin>>t;
-    while(t--){
+    int t;
+    cin >> t;
+    while(t--) {
         int n ;
-        cin>>n;
-        
-    int arr[150000];
-    for(int i = 0; i < n; i++){
-        int x;
-        cin>>x;
-        arr[i] = x;
-    }
-    
-    findElements(arr, n); 
+        cin >> n;
+    		int arr[150000];
+    		for(int i = 0; i < n; i++) {
+						int x;
+						cin >> x;
+						arr[i] = x;
+				}
+    		findElements(arr, n); 
     }
   
     return 0; 
