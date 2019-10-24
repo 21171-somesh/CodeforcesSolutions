@@ -21,12 +21,12 @@ long long binpow(long long a, long long b, long long m) {
 
 int main()
 {	int n ; 
-	cin>>n ; 
+	cin >> n ; 
 	vector <int> v ; 
-	flp(i,0,n)
+	flp(i, 0, n)
 	{
 		int x ; 
-		cin>>x ; 
+		cin >> x ; 
 		v.push_back(x);
 	}
 	sort(v.begin(), v.end());
@@ -36,7 +36,6 @@ int main()
 	{	
 		if(v[i]<v[j])
 		{	
-			
 			i++;
 			j++;
 			ans++;
@@ -47,5 +46,5 @@ int main()
 		}
 
 	}
-	cout<<ans ; 
+	cout << ans ; 
 }
